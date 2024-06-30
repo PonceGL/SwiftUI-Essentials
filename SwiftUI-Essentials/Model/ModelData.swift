@@ -9,11 +9,12 @@ import Foundation
 
 @Observable
 class ModelData {
-    var landmarks: [Landmark] = load("landmarkData.json")
+    var landmarks: [Landmark] = loadJson("landmarkData.json")
+    var hikes: [Hike] = loadJson("hikeData.json")
 }
 
 
-func load<T: Decodable>(_ filename: String) -> T {
+func loadJson<T: Decodable>(_ filename: String) -> T {
     let data: Data
 
 
