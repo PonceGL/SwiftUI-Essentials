@@ -31,7 +31,7 @@ struct CategoryRow: View {
                     }
                 }
             }
-            .frame(height: 185)
+            .frame(width: .infinity, height: 185)
         }
     }
 }
